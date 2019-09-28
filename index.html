@@ -14,14 +14,20 @@
            
         </a-assets>
           
-      <a-marker preset="custom" type="pattern" url="marker-patt/pattern-headerimage.patt">
+        <a-marker preset="custom" type="pattern" url="marker-patt/pattern-headerimage.patt">
           <a-entity
               position="0 0 0"
               id="animated-model"
               gltf-model="#animated-asset"
               scale="1.75 1.75 1.75">
           </a-entity>
-      </a-marker>
+          <a-animation attribute="rotation"
+            dur="2000"
+            fill="forwards"
+            from="0 0 0"
+            to="360 360 360"
+            repeat="indefinite"></a-animation>
+        </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
